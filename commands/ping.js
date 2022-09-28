@@ -5,6 +5,6 @@ module.exports = {
         usage: `!ping`,
     },
     async run (bot,message,args) {
-        message.channel.send("My ping is \`" + bot.ws.ping + " ms\`");
+        message.channel.send("Pong! \`" + bot.ws.ping + " ms\`");
     }
 }
