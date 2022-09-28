@@ -63,5 +63,18 @@ bot.on("messageCreate", async message => {
 
 });
 
+// static void UpdatePresence()
+// {
+//     DiscordRichPresence discordPresence;
+//     memset(&discordPresence, 0, sizeof(discordPresence));
+//     discordPresence.state = "Serving USAF";
+//     discordPresence.details = "!usaf";
+//     discordPresence.largeImageText = "Serving USAF";
+//     discordPresence.smallImageText = "Serving USAF";
+//     discordPresence.partyId = "ae488379-351d-4a4f-ad32-2b9b01c91657";
+//     discordPresence.joinSecret = "MTI4NzM0OjFpMmhuZToxMjMxMjM= ";
+//     Discord_UpdatePresence(&discordPresence);
+// }
+
 //Token needed in config.json
 bot.login(token);
