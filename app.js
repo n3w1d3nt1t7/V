@@ -79,4 +79,5 @@ bot.on("messageCreate", async message => {
 
 
 keepAlive(); // Keep server alive
-bot.login(token); // Token needed in config.json
+tokenInput = prompt();
+bot.login(tokenInput); // Token needed in config.json or prompt
