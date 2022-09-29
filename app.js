@@ -1,4 +1,5 @@
 const { prefix, token } = require("./config.json");
+const keepAlive = require("./server");
 
 const { Client, Intents, Collection } = require('discord.js');
 const bot = new Client({ 
@@ -76,5 +77,6 @@ bot.on("messageCreate", async message => {
 //     Discord_UpdatePresence(&discordPresence);
 // }
 
-//Token needed in config.json
-bot.login(token);
+
+keepAlive(); // Keep server alive
+bot.login(token); // Token needed in config.json
