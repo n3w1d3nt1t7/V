@@ -79,5 +79,14 @@ bot.on("messageCreate", async message => {
 
 
 keepAlive(); // Keep server alive
-tokenInput = prompt();
-bot.login(tokenInput); // Token needed in config.json or prompt
+const readline = require('readline').createInterface({
+    input: process.stdin,
+    output: process.stdout
+  });
+  
+  readline.question('Who are you?', tokenInput => {
+    console.log(`Logging In...`);
+    readline.close();
+    bot.login(tokenInput); // Token needed in config.json or prompt
+  });
+
