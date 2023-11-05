@@ -13,7 +13,7 @@ module.exports = {
 	        .setTitle('Speech')
             .addFields(
                 { name: 'Overview', value: 'In channels that require the maintenance of professionalism, the following is required:\n- Proficiency in English.\n- Proper grammar and spelling.\n- Usage of proper speech customs.\nViolation of these can result in warnings and demotions.' },
-                { name: 'Speech Customs', value: '- Address lower ranked members by their rank.\n- Address superiors with “Sir” or “Ma’am”.\n- When asked about your well-being, you will always reply with “Outstanding”, despite your current situation.\n- We go by Eastern Time. Morning: 0000-1159, Afternoon: 1200-1959, Night: 2000-2359.' },
+                { name: 'Speech Customs', value: '- Address lower ranked members by their rank.\n- Address superiors with “Sir” or “Ma’am”.\n- When asked about your well-being, you will always reply with “Outstanding”, despite your current situation.\n- We go by Coordinated Universal Time (UTC). Morning: 0000-1159, Afternoon: 1200-1959, Night: 2000-2359.' },
             )
 
         message.channel.send( {embeds: [speechEmbed]} );
