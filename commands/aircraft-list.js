@@ -18,16 +18,3 @@ module.exports = {
         message.channel.send( {embeds: [aircraftEmbed]} );
     }
 }
-
-/*
-        const speechEmbed = new MessageEmbed()
-	        .setColor(0x0099FF)
-	        .setTitle('Speech')
-            .setDescription('Some description here')
-            .addFields(
-                { name: 'Regular field title', value: 'Some value here' },
-                { name: '\u200B', value: '\u200B' },
-                { name: 'Inline field title', value: 'Some value here', inline: true },
-                { name: 'Inline field title', value: 'Some value here', inline: true },
-            )
-            */
